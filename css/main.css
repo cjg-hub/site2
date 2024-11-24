@@ -1,0 +1,144 @@
+/* Apply Raleway as the default font */
+body {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    margin: 0; /* Remove default margins */
+}
+
+button.btn-pink {
+    background-color: #ee537f; 
+    border-color: #ee537f;
+}
+button.btn-pink:hover {
+    background-color: #fa6690; 
+    border-color: #fa6690;
+}
+
+/* Set bold weight for headings */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .skill-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.mid-background {
+    background-color: #fffafc;
+}
+
+/* General navbar style adjustments */
+.navbar {
+    height: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: make background semi-transparent */
+}
+
+/* Center logo and prevent overflow */
+.navbar-brand img {
+    max-height: 150px; /* Adjust logo height if necessary */
+}
+
+.navbar-nav {
+    margin-top: 0.2rem; /* Adds some space between logo and nav items */
+}
+
+.nav-item .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+}
+/* Active link styling */
+.nav-item .nav-link.active {
+    color: #ee537f;
+}
+
+/* Hover effect */
+.nav-item .nav-link:hover {
+    color: #ee537f;
+}
+
+
+/* Set regular weight for paragraphs and list items */
+p, li, .skill-card p {
+    font-weight: 400;
+}    
+
+.section-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px;
+}
+.section-title-container {
+    background-color: #ee537f;
+    width: 100%;
+    padding: 15px 0px;
+}
+.skill-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.skill-card {
+    border-bottom: 2px solid #ee537f;
+    padding-bottom: 1rem;
+    padding-bottom: 1rem;
+    height: 100%;
+}
+img.sw-logo {
+    width:200px
+}
+.new-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    text-align: center;
+}
+.card .card-footer {
+    background-color: transparent;
+    border: none;
+  }
+.gallery-block {
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:cover;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.btn-pink {
+    float: right;
+    background-color: #ee537f;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #e63971; /* Slightly darker shade for hover */
+    color: #fff;
+}
+
+.btn-pink:focus,
+.btn-pink:active {
+    background-color: #cc3062; /* Darker shade for focus or active states */
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
+}
+p#bio-text {
+    color: #666;
+    font-size: 1.5rem;
+}
