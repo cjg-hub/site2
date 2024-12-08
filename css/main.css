@@ -1,15 +1,23 @@
+html {
+    scroll-padding-top: 220px; 
+}
+
 /* Apply Raleway as the default font */
 body {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth; /* Enable smooth scrolling */
     margin: 0; /* Remove default margins */
 }
-
-button.btn-pink {
+.img-responsive {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+button.btn-pink, a.btn-pink {
     background-color: #ee537f; 
     border-color: #ee537f;
 }
-button.btn-pink:hover {
+button.btn-pink:hover, a.btn-pink:hover {
     background-color: #fa6690; 
     border-color: #fa6690;
 }
@@ -17,8 +25,23 @@ button.btn-pink:hover {
 /* Set bold weight for headings */
 h1, h2, h3, h4, h5, h6, .navbar-brand, .skill-header {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
 }
+
+div.card-body ul {
+    list-style-type: square;
+}
+
+div.card-body ul {
+    list-style-type: none;
+}
+  
+div.card-body ul li:before {
+    content: '-';
+    position: absolute;
+    margin-left: -15px;
+  }
+
+.ex-card h5 { font-weight: 600;}
 
 .mid-background {
     background-color: #fffafc;
@@ -62,12 +85,17 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .skill-header {
 
 /* Set regular weight for paragraphs and list items */
 p, li, .skill-card p {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }    
 
+section.container {
+    margin-bottom: 100px;
+}
+
 .section-title {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0px;
 }
@@ -87,15 +115,37 @@ p, li, .skill-card p {
     height: 100%;
 }
 img.sw-logo {
-    width:200px
+    max-height: 70%;
+    max-width: 80%;
 }
-.new-card {
+
+.sw-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0px;
     text-align: center;
+    height: 150px;
+    align-content: space-around;
 }
+div.sw-card img {
+    vertical-align: middle;
+}
+div.ex-card {
+    border: 1px solid #F9D7E0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+img.ex-logo {
+    max-height: 65px;
+    width:min-content;
+    margin-bottom: 30px;
+}
+div.ex-card button,  a.btn-pink {
+    text-align: center;
+    width: 50%;
+}
+
 .card .card-footer {
     background-color: transparent;
     border: none;
