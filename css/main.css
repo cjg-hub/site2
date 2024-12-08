@@ -138,6 +138,7 @@ div.ex-card {
 }
 img.ex-logo {
     max-height: 65px;
+    max-width: 165px;
     width:min-content;
     margin-bottom: 30px;
 }

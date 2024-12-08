@@ -1,6 +1,5 @@
 
 .hero-section {
-    
     margin-top: -220px;
     height: 100vh; /* Full viewport height */
     color: #ffffff;
@@ -33,11 +32,13 @@
     position: absolute;
     bottom: 320px; /* Position a bit above the bottom */
     left: 0px;
-    width: 500px;
+    width: 400px;
     color: #ee537f;
     z-index: 2;
     overflow-y: auto; /* Allows scrolling if text content is too large */
 }
+
+
 
 .hero-content {
     position: absolute;
@@ -52,16 +53,23 @@
     z-index: 2;
     overflow-y: auto; /* Allows scrolling if text content is too large */
 }
-
 /* Hero title styling */
 .hero-title {
     font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
     color: inherit; /* Inherit color from parent */
 }
+
+@media  (max-width: 767.98px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+  }
+
+
 
 /* Hero subtext styling with margin adjustments */
 .hero-subtext {
