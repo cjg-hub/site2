@@ -46,16 +46,21 @@ div.card-body ul li:before {
 .mid-background {
     background-color: #fffafc;
 }
-
-/* General navbar style adjustments */
-.navbar {
-    height: 220px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.9); /* Optional: make background semi-transparent */
+@media (min-width:990px) {
+    .navbar {
+        height: 120px;
+    }
+}
+@media (min-width:991px) {
+    .navbar {
+        height: 220px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.9); /* Optional: make background semi-transparent */
+    }
 }
 
 /* Center logo and prevent overflow */
@@ -139,7 +144,7 @@ div.ex-card {
 img.ex-logo {
     max-height: 65px;
     max-width: 165px;
-    width:min-content;
+    
     margin-bottom: 30px;
 }
 div.ex-card button,  a.btn-pink {

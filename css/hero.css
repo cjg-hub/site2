@@ -67,7 +67,25 @@
     .hero-title {
         font-size: 2rem;
     }
+    .hero-content-img {
+        position: absolute;
+        bottom: 260px; /* Position a bit above the bottom */
+        left: 0px;
+        width: 200px;
+        color: #ee537f;
+        z-index: 2;
+        overflow-y: auto; /* Allows scrolling if text content is too large */
+    }
+    .hero-content {
+        padding: 30px;
+        height: 260px;
+
+    }
+    .hero-subtext {
+        height: 105px;
+    }
   }
+
 
 
 
