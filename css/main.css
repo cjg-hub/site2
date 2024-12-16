@@ -46,9 +46,18 @@ div.card-body ul li:before {
 .mid-background {
     background-color: #fffafc;
 }
-@media (min-width:990px) {
+
+@media (max-width:990px) {
     .navbar {
-        height: 120px;
+        height: 100px;
+    }
+    img#header-logo {
+        height: 80px; /* Adjust logo height if necessary */
+    }
+    p#bio-text {
+        color: #666;
+        font-size: 1rem;
+        padding-top: 60px;
     }
 }
 @media (min-width:991px) {
@@ -61,12 +70,17 @@ div.card-body ul li:before {
         z-index: 1000;
         background-color: rgba(255, 255, 255, 0.9); /* Optional: make background semi-transparent */
     }
+    img#header-logo {
+        height: 140px; /* Adjust logo height if necessary */
+    }
+    p#bio-text {
+        color: #666;
+        font-size: 1.5rem;
+    }
 }
 
 /* Center logo and prevent overflow */
-.navbar-brand img {
-    max-height: 150px; /* Adjust logo height if necessary */
-}
+
 
 .navbar-nav {
     margin-top: 0.2rem; /* Adds some space between logo and nav items */
@@ -193,8 +207,4 @@ div.ex-card button,  a.btn-pink {
     background-color: #cc3062; /* Darker shade for focus or active states */
     outline: none;
     box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
-}
-p#bio-text {
-    color: #666;
-    font-size: 1.5rem;
 }
