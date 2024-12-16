@@ -14,7 +14,7 @@
 /* Overlay effect for the hero image */
 .hero-overlay {
     position: absolute;
-    background-image: url('../images/sm-hero-background.jpeg');
+    background-image: url('sm-hero-background.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
