@@ -30,7 +30,7 @@
 
 .hero-content-img {
     position: absolute;
-    bottom: 320px; /* Position a bit above the bottom */
+    bottom: 315px; /* Position a bit above the bottom */
     left: 0px;
     width: 400px;
     color: #ee537f;
@@ -63,7 +63,19 @@
     color: inherit; /* Inherit color from parent */
 }
 
-@media  (max-width: 767.98px) {
+@media (max-height: 1200px) {
+    .hero-content-img {
+        position: absolute;
+        bottom: 320px; /* Position a bit above the bottom */
+        left: 0px;
+        height: 35vh;
+        width: auto;
+        color: #ee537f;
+        z-index: 2;
+
+}
+
+@media  (max-width: 767px) {
     .hero-title {
         font-size: 2rem;
     }
@@ -72,6 +84,7 @@
         bottom: 260px; /* Position a bit above the bottom */
         left: 0px;
         width: 200px;
+        height: auto;
         color: #ee537f;
         z-index: 2;
         overflow-y: auto; /* Allows scrolling if text content is too large */
