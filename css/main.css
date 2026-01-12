@@ -1,3 +1,11 @@
+:root {
+    /* Brand colours */
+    --sage: #C9D7C4;
+    --navy: #1F2A44;
+    --beige: #F2EDE4;
+    --charcoal: #B8AEA1;
+    --taupe: #B8AEA1;
+
 html {
     scroll-padding-top: 220px; 
 }
@@ -61,3 +69,4 @@ div.card-body ul li:before {
 /* Responsive navbar + bio text */
 @media (max-width: 990px) {
     .navbar {
+
