@@ -1,72 +1,164 @@
+/* =========================
+   COLOR PALETTE
+========================= */
 :root {
-    /* Brand colours */
-    --sage: #C9D7C4;
-    --navy: #1F2A44;
-    --beige: #F2EDE4;
-    --charcoal: #B8AEA1;
-    --taupe: #B8AEA1;
-
-html {
-    scroll-padding-top: 220px; 
+    --main-color: #C9D7C4;       /* Sage */
+    --secondary-color: #1F2A44;  /* Navy */
+    --beige-color: #F2EDE4;      /* Beige */
+    --text-color: #1F2A44;       /* Dark text */
+    --text-secondary: #B8AEA1;   /* Secondary text */
 }
 
-/* Apply Raleway as the default font */
+/* =========================
+   GLOBAL STYLES
+========================= */
 body {
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
+    background-color: var(--beige-color);
+    color: var(--text-color);
     margin: 0;
-    background-color: #F2EDE4; /* Beige background */
-    color: #1F2A44; /* Navy body text */
+    padding: 0;
 }
 
-.img-responsive {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: var(--beige-color) !important;
 }
 
-/* Buttons */
-button.btn-pink,
-a.btn-pink {
-    background-color: #1F2A44; /* Navy */
-    border-color: #1F2A44;
-    color: #F2EDE4;
-}
-
-button.btn-pink:hover,
-a.btn-pink:hover {
-    background-color: #2A3760; /* Slightly lighter navy */
-    border-color: #2A3760;
-}
-
-/* Set bold weight for headings */
-h1, h2, h3, h4, h5, h6,
-.navbar-brand,
-.skill-header {
-    font-family: 'Raleway', sans-serif;
-    color: #1F2A44;
-}
-
-div.card-body ul {
-    list-style-type: none;
-}
-
-div.card-body ul li:before {
-    content: '-';
-    position: absolute;
-    margin-left: -15px;
-    color: #B8AEA1;
-}
-
-.ex-card h5 {
+.navbar .nav-link {
+    color: var(--secondary-color) !important;
     font-weight: 600;
 }
 
-.mid-background {
-    background-color: #C9D7C4; /* Sage */
+.navbar .nav-link:hover {
+    color: var(--main-color) !important;
 }
 
-/* Responsive navbar + bio text */
-@media (max-width: 990px) {
-    .navbar {
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
 
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-subtext {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+.section-title-container {
+    padding: 40px 0 20px 0;
+    background-color: var(--main-color);
+}
+
+.section-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* =========================
+   SKILLS CARDS
+========================= */
+.skill-card {
+    background-color: var(--beige-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 20px;
+    color: var(--secondary-color);
+}
+
+.skill-card h5 {
+    font-weight: 600;
+}
+
+/* =========================
+   SOFTWARE CARDS
+========================= */
+.sw-card {
+    background-color: var(--beige-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.sw-logo {
+    max-width: 70%;
+}
+
+/* =========================
+   EXPERIENCE / TRAINING CARDS
+========================= */
+.ex-card {
+    background-color: var(--beige-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.ex-card .card-footer {
+    background-color: var(--main-color);
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.btn-pink {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: none;
+    font-weight: 600;
+}
+
+.btn-pink:hover {
+    background-color: var(--secondary-color);
+    color: var(--beige-color);
+}
+
+/* =========================
+   GALLERY BLOCKS
+========================= */
+.gallery-block {
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
+/* =========================
+   TEXT
+========================= */
+p, li {
+    color: var(--text-color);
+}
+
+li {
+    margin-bottom: 6px;
+}
