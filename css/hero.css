@@ -1,7 +1,7 @@
 .hero-section {
     margin-top: -220px;
     height: 100vh;
-    color: #F2EDE4; /* Beige text */
+    color: #B8AEA1; /* Charcoal text */
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -9,7 +9,6 @@
     justify-content: center;
 }
 
-/* Overlay effect for the hero image */
 .hero-overlay {
     position: absolute;
     background-image: url('sm-hero-background.jpeg');
@@ -20,17 +19,16 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(31, 42, 68, 0.9); /* Navy overlay */
+    background-color: rgba(31, 42, 68, 0.8); /* Secondary (Navy) overlay */
     z-index: 1;
 }
 
-/* Hero image content */
 .hero-content-img {
     position: absolute;
     bottom: 315px;
     left: 0px;
     width: 400px;
-    color: #B8AEA1; /* Charcoal / Taupe */
+    color: #C9D7C4; /* Main Colour */
     z-index: 2;
     overflow-y: auto;
 }
@@ -42,14 +40,13 @@
     transform: translateX(-50%);
     max-height: calc(100vh - 150px);
     width: 100%;
-    background-color: #C9D7C4; /* Sage */
+    background-color: rgba(201, 215, 196, 0.9); /* Main Colour */
     padding: 100px;
-    color: #1F2A44; /* Navy text for contrast */
+    color: #1F2A44; /* Secondary (Navy) text */
     z-index: 2;
     overflow-y: auto;
 }
 
-/* Hero title styling */
 .hero-title {
     font-family: 'Raleway', sans-serif;
     font-size: 4rem;
@@ -59,15 +56,20 @@
     color: inherit;
 }
 
+.hero-subtext {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
 @media (max-height: 1200px) {
     .hero-content-img {
-        position: absolute;
         bottom: 320px;
-        left: 0px;
         height: 35vh;
         width: auto;
-        color: #B8AEA1;
-        z-index: 2;
     }
 }
 
@@ -75,36 +77,19 @@
     .hero-title {
         font-size: 2rem;
     }
-
     .hero-content-img {
-        position: absolute;
         bottom: 260px;
-        left: 0px;
         width: 200px;
         height: auto;
-        color: #B8AEA1;
-        z-index: 2;
         overflow-y: auto;
     }
-
     .hero-content {
         padding: 30px;
         height: 260px;
         overflow-x: hidden;
         overflow-y: hidden;
     }
-
     .hero-subtext {
         height: 105px;
     }
-}
-
-/* Hero subtext styling */
-.hero-subtext {
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #B8AEA1; /* Charcoal / Taupe */
-    margin-bottom: 10px;
 }
