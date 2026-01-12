@@ -1,95 +1,47 @@
+/* HERO SECTION */
 .hero-section {
-    margin-top: -220px;
+    position: relative;
     height: 100vh;
-    color: #B8AEA1; /* Charcoal text */
-    text-align: center;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .hero-overlay {
     position: absolute;
-    background-image: url('sm-hero-background.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    background-color: rgba(31, 42, 68, 0.8); /* Secondary (Navy) overlay */
+    height: 100%;
+    background: rgba(0,0,0,0.3);
     z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtext {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 
 .hero-content-img {
     position: absolute;
-    bottom: 315px;
-    left: 0px;
-    width: 400px;
-    color: #C9D7C4; /* Main Colour */
-    z-index: 2;
-    overflow-y: auto;
-}
-
-.hero-content {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-height: calc(100vh - 150px);
-    width: 100%;
-    background-color: rgba(201, 215, 196, 0.9); /* Main Colour */
-    padding: 100px;
-    color: #1F2A44; /* Secondary (Navy) text */
-    z-index: 2;
-    overflow-y: auto;
-}
-
-.hero-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    color: inherit;
-}
-
-.hero-subtext {
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: inherit;
-    margin-bottom: 10px;
-}
-
-@media (max-height: 1200px) {
-    .hero-content-img {
-        bottom: 320px;
-        height: 35vh;
-        width: auto;
-    }
-}
-
-@media (max-width: 767px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-    .hero-content-img {
-        bottom: 260px;
-        width: 200px;
-        height: auto;
-        overflow-y: auto;
-    }
-    .hero-content {
-        padding: 30px;
-        height: 260px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    .hero-subtext {
-        height: 105px;
-    }
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.8;
 }
