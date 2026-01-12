@@ -5,10 +5,8 @@ html {
 /* Apply Raleway as the default font */
 body {
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    color: #B8AEA1; /* Text (Charcoal) */
-    background-color: #F2EDE4; /* Third (Beige) for background */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    margin: 0; /* Remove default margins */
 }
 
 .img-responsive {
@@ -18,39 +16,36 @@ body {
 }
 
 button.btn-pink, a.btn-pink {
-    background-color: #C9D7C4; /* Main Colour (Sage) */
-    border-color: #C9D7C4;
-    color: #1F2A44; /* Secondary text colour on button */
+    background-color: #ee537f; 
+    border-color: #ee537f;
 }
 
 button.btn-pink:hover, a.btn-pink:hover {
-    background-color: #B8AEA1; /* Text (Charcoal) hover */
-    border-color: #B8AEA1;
+    background-color: #fa6690; 
+    border-color: #fa6690;
 }
 
-/* Headings */
+/* Set bold weight for headings */
 h1, h2, h3, h4, h5, h6, .navbar-brand, .skill-header {
     font-family: 'Raleway', sans-serif;
-    color: #1F2A44; /* Secondary (Navy) */
 }
 
 div.card-body ul {
     list-style-type: none;
 }
-  
+
 div.card-body ul li:before {
     content: '-';
     position: absolute;
     margin-left: -15px;
 }
 
-.ex-card h5 {
+.ex-card h5 { 
     font-weight: 600;
-    color: #1F2A44; /* Secondary (Navy) */
 }
 
 .mid-background {
-    background-color: #F2EDE4; /* Third (Beige) */
+    background-color: #fffafc;
 }
 
 @media (max-width:990px) {
@@ -58,10 +53,10 @@ div.card-body ul li:before {
         height: 100px;
     }
     img#header-logo {
-        height: 80px;
+        height: 80px; /* Adjust logo height if necessary */
     }
     p#bio-text {
-        color: #B8AEA1; /* Charcoal */
+        color: #666;
         font-size: 1rem;
         padding-top: 60px;
     }
@@ -75,13 +70,13 @@ div.card-body ul li:before {
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: rgba(201, 215, 196, 0.9); /* Main Colour overlay */
+        background-color: rgba(255, 255, 255, 0.9); 
     }
     img#header-logo {
         height: 140px; 
     }
     p#bio-text {
-        color: #B8AEA1; /* Charcoal */
+        color: #666;
         font-size: 1.5rem;
     }
 }
@@ -94,18 +89,22 @@ div.card-body ul li:before {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     margin: 0 1rem;
-    color: #1F2A44; /* Secondary (Navy) */
 }
 
-.nav-item .nav-link.active,
+/* Active link styling */
+.nav-item .nav-link.active {
+    color: #ee537f;
+}
+
+/* Hover effect */
 .nav-item .nav-link:hover {
-    color: #C9D7C4; /* Main Colour (Sage) */
+    color: #ee537f;
 }
 
+/* Set regular weight for paragraphs and list items */
 p, li, .skill-card p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: #B8AEA1; /* Charcoal */
 }    
 
 section.container {
@@ -113,13 +112,14 @@ section.container {
 }
 
 .section-title {
-    color: #1F2A44; /* Secondary (Navy) */
+    color: #fff;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0px;
 }
+
 .section-title-container {
-    background-color: #C9D7C4; /* Main Colour (Sage) */
+    background-color: #ee537f;
     width: 100%;
     padding: 15px 0px;
 }
@@ -127,17 +127,21 @@ section.container {
 .skill-header {
     font-weight: bold;
     font-size: 1.1rem;
-    color: #1F2A44; /* Secondary (Navy) */
 }
 
 .skill-card {
-    border-bottom: 2px solid #C9D7C4; /* Main Colour */
+    border-bottom: 2px solid #ee537f;
     padding-bottom: 1rem;
     height: 100%;
 }
 
+img.sw-logo {
+    max-height: 70%;
+    max-width: 80%;
+}
+
 .sw-card {
-    background-color: #F2EDE4; /* Third (Beige) */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0px;
@@ -146,52 +150,15 @@ section.container {
     align-content: space-around;
 }
 
+div.sw-card img {
+    vertical-align: middle;
+}
+
 div.ex-card {
-    border: 1px solid #C9D7C4; /* Main Colour */
-    background-color: #F2EDE4; /* Third (Beige) */
+    border: 1px solid #F9D7E0;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.card-footer {
-    background-color: transparent;
-    border: none;
-}
-
-.gallery-block {
-    background-color: #F2EDE4; /* Third (Beige) */
-    width: 100%;
-    height: 220px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    border: 1px solid #B8AEA1; /* Charcoal */
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0px;
-    margin: 0px 0px;
-    text-align: center;
-}
-
-.btn-pink {
-    float: right;
-    background-color: #C9D7C4; /* Main Colour */
-    color: #1F2A44; /* Secondary Text */
-    border: none;
-    padding: 0.5rem 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-pink:hover {
-    background-color: #B8AEA1; /* Charcoal hover */
-    color: #1F2A44;
-}
-
-.btn-pink:focus,
-.btn-pink:active {
-    background-color: #1F2A44; /* Secondary (Navy) active */
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(201, 215, 196, 0.5); /* Sage outline */
-}
+img.ex-logo {
+    max-height: 65p
