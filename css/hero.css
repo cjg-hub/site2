@@ -1,15 +1,13 @@
-
 .hero-section {
     margin-top: -220px;
-    height: 100vh; /* Full viewport height */
-    color: #ffffff;
+    height: 100vh;
+    color: #F2EDE4; /* Beige text */
     text-align: center;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-
-  }
+    align-items: center;
+    justify-content: center;
+}
 
 /* Overlay effect for the hero image */
 .hero-overlay {
@@ -22,37 +20,35 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for text visibility */
+    background-color: rgba(31, 42, 68, 0.9); /* Navy overlay */
     z-index: 1;
 }
 
-/* Hero content styling with limited height */
-
+/* Hero image content */
 .hero-content-img {
     position: absolute;
-    bottom: 315px; /* Position a bit above the bottom */
+    bottom: 315px;
     left: 0px;
     width: 400px;
-    color: #ee537f;
+    color: #B8AEA1; /* Charcoal / Taupe */
     z-index: 2;
-    overflow-y: auto; /* Allows scrolling if text content is too large */
+    overflow-y: auto;
 }
-
-
 
 .hero-content {
     position: absolute;
-    bottom: 0px; /* Position a bit above the bottom */
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    max-height: calc(100vh - 150px); /* Ensure content doesn’t exceed viewport, adjust as needed */
+    max-height: calc(100vh - 150px);
     width: 100%;
-    background-color: #283924ec; /* Dark green background */
+    background-color: #C9D7C4; /* Sage */
     padding: 100px;
-    color: #ee537f;
+    color: #1F2A44; /* Navy text for contrast */
     z-index: 2;
-    overflow-y: auto; /* Allows scrolling if text content is too large */
+    overflow-y: auto;
 }
+
 /* Hero title styling */
 .hero-title {
     font-family: 'Raleway', sans-serif;
@@ -60,56 +56,55 @@
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    color: inherit; /* Inherit color from parent */
+    color: inherit;
 }
 
 @media (max-height: 1200px) {
     .hero-content-img {
         position: absolute;
-        bottom: 320px; /* Position a bit above the bottom */
+        bottom: 320px;
         left: 0px;
         height: 35vh;
         width: auto;
-        color: #ee537f;
+        color: #B8AEA1;
         z-index: 2;
-
+    }
 }
 
-@media  (max-width: 767px) {
+@media (max-width: 767px) {
     .hero-title {
         font-size: 2rem;
     }
+
     .hero-content-img {
         position: absolute;
-        bottom: 260px; /* Position a bit above the bottom */
+        bottom: 260px;
         left: 0px;
         width: 200px;
         height: auto;
-        color: #ee537f;
+        color: #B8AEA1;
         z-index: 2;
-        overflow-y: auto; /* Allows scrolling if text content is too large */
+        overflow-y: auto;
     }
+
     .hero-content {
         padding: 30px;
         height: 260px;
         overflow-x: hidden;
         overflow-y: hidden;
-
     }
+
     .hero-subtext {
         height: 105px;
     }
-  }
+}
 
-
-
-
-/* Hero subtext styling with margin adjustments */
+/* Hero subtext styling */
 .hero-subtext {
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 10px;
     font-size: 1rem;
-    color: inherit; /* Inherit color from parent */
-    margin-bottom: 10px; /* Add some bottom margin to create space */
+    color: #B8AEA1; /* Charcoal / Taupe */
+    margin-bottom: 10px;
 }
