@@ -1,115 +1,128 @@
-
 .hero-section {
-    margin-top: -220px;
-    height: 100vh; /* Full viewport height */
-    color: #ffffff;
+    margin-top: 0px;
+    height: 576px;
+    /* Fixed height as requested */
+    background-color: #ffffff;
+    /* White background */
+    color: #1F2A44;
     text-align: center;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 0px;
+    /* Removed padding */
+}
 
-  }
-
-/* Overlay effect for the hero image */
+/* Overlay effect removed */
 .hero-overlay {
-    position: absolute;
-    background-image: url('sm-hero-background.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for text visibility */
-    z-index: 1;
+    display: none;
 }
 
-/* Hero content styling with limited height */
-
+/* Hero content styling */
 .hero-content-img {
-    position: absolute;
-    bottom: 315px; /* Position a bit above the bottom */
-    left: 0px;
-    width: 400px;
-    color: #ee537f;
+    position: relative;
+    width: 300px;
+    display: block;
+    color: #1F2A44;
+    /* Updated color just in case alt text shows */
     z-index: 2;
-    overflow-y: auto; /* Allows scrolling if text content is too large */
+    margin: 0;
+    flex-shrink: 0;
 }
-
-
 
 .hero-content {
-    position: absolute;
-    bottom: 0px; /* Position a bit above the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    max-height: calc(100vh - 150px); /* Ensure content doesn’t exceed viewport, adjust as needed */
+    position: relative;
+    /* Changed from absolute to flow naturally since backend image is gone */
+    bottom: auto;
+    left: auto;
+    transform: none;
+    max-height: none;
     width: 100%;
-    background-color: #283924ec; /* Dark green background */
-    padding: 100px;
-    color: #ee537f;
+    height: 100%;
+    background-color: #C9D7C4;
+    /* Sage background for the strip */
+    padding: 20px;
+    /* Symmetrical padding */
+    color: #1F2A44;
     z-index: 2;
-    overflow-y: auto; /* Allows scrolling if text content is too large */
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    /* Changed to Vertical layout for centering */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Reduced gap for stacked text */
+    border-bottom: 2px solid white;
 }
+
+.hero-name-img {
+    width: 60%;
+    /* Approx 3/4 of the visual weight of the title */
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0px;
+}
+
 /* Hero title styling */
 .hero-title {
     font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    /* Reduced from 6rem */
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    color: inherit; /* Inherit color from parent */
+    color: #1F2A44;
 }
 
-@media (max-height: 1200px) {
-    .hero-content-img {
-        position: absolute;
-        bottom: 320px; /* Position a bit above the bottom */
-        left: 0px;
-        height: 35vh;
-        width: auto;
-        color: #ee537f;
-        z-index: 2;
-
-}
-
-@media  (max-width: 767px) {
-    .hero-title {
-        font-size: 2rem;
+@media (max-width: 990px) {
+    .hero-content {
+        flex-direction: column;
+        /* Stack on smaller screens */
+        padding: 40px 20px;
+        gap: 20px;
     }
+
     .hero-content-img {
-        position: absolute;
-        bottom: 260px; /* Position a bit above the bottom */
-        left: 0px;
         width: 200px;
-        height: auto;
-        color: #ee537f;
-        z-index: 2;
-        overflow-y: auto; /* Allows scrolling if text content is too large */
+        top: 0;
+        /* Reset positioning */
     }
+
+    .hero-title {
+        font-size: 3.5rem;
+        /* Smoother scaling */
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-content-img {
+        width: 180px;
+    }
+
     .hero-content {
         padding: 30px;
-        height: 260px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
     }
+
     .hero-subtext {
-        height: 105px;
+        font-size: 0.9rem;
     }
-  }
-
-
-
+}
 
 /* Hero subtext styling with margin adjustments */
 .hero-subtext {
-    font-weight: 400;
+    font-weight: 700;
+    /* Made bolder to match new style? Or keep 400. User said Navy text. */
     letter-spacing: 1px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 1rem;
-    color: inherit; /* Inherit color from parent */
-    margin-bottom: 10px; /* Add some bottom margin to create space */
+    color: white;
+    margin-bottom: 5px;
 }

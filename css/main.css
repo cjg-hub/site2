@@ -1,30 +1,56 @@
 html {
-    scroll-padding-top: 220px; 
+    scroll-padding-top: 220px;
 }
 
 /* Apply Raleway as the default font */
 body {
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-    margin: 0; /* Remove default margins */
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling */
+    margin: 0;
+    /* Remove default margins */
+    color: #373435;
+    /* Charcoal */
 }
+
 .img-responsive {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
 }
-button.btn-pink, a.btn-pink {
-    background-color: #ee537f; 
-    border-color: #ee537f;
+
+/* Buttons */
+button.btn-pink,
+a.btn-pink {
+    background-color: #C9D7C4;
+    /* Sage */
+    border-color: #C9D7C4;
+    color: #1F2A44;
+    /* Navy */
+    font-weight: 700;
 }
-button.btn-pink:hover, a.btn-pink:hover {
-    background-color: #fa6690; 
-    border-color: #fa6690;
+
+button.btn-pink:hover,
+a.btn-pink:hover {
+    background-color: #B8AEA1;
+    /* Taupe */
+    border-color: #B8AEA1;
+    color: #1F2A44;
+    /* Navy */
 }
 
 /* Set bold weight for headings */
-h1, h2, h3, h4, h5, h6, .navbar-brand, .skill-header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.skill-header {
     font-family: 'Raleway', sans-serif;
+    color: #1F2A44;
+    /* Navy */
 }
 
 div.card-body ul {
@@ -34,102 +60,154 @@ div.card-body ul {
 div.card-body ul {
     list-style-type: none;
 }
-  
+
 div.card-body ul li:before {
     content: '-';
     position: absolute;
     margin-left: -15px;
-  }
+}
 
-.ex-card h5 { font-weight: 600;}
+.ex-card h5 {
+    font-weight: 600;
+}
 
 .mid-background {
     background-color: #fffafc;
+    /* This might be unused now or replaced by alternating sections */
 }
 
 @media (max-width:990px) {
     .navbar {
         height: 100px;
     }
+
     img#header-logo {
-        height: 80px; /* Adjust logo height if necessary */
+        height: 100px;
+        /* Adjust logo height if necessary */
     }
+
     p#bio-text {
-        color: #666;
-        font-size: 1rem;
-        padding-top: 60px;
+        color: #373435;
+        font-size: 0.85rem;
+        padding-top: 10px;
+        /* Reduced padding since we removed the previous specialized container */
     }
 }
+
 @media (min-width:991px) {
     .navbar {
-        height: 220px;
+        height: auto;
+        min-height: 220px;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: rgba(255, 255, 255, 0.9); 
+        background-color: rgba(255, 255, 255, 0.95);
     }
+
     img#header-logo {
-        height: 140px; 
+        height: 200px;
+        /* Increased from 140px */
     }
+
     p#bio-text {
-        color: #666;
-        font-size: 1.5rem;
+        color: #373435;
+        font-size: 1.3rem;
     }
 }
 
 .navbar-nav {
-    margin-top: 0.2rem; 
+    margin-top: 0.2rem;
 }
 
 .nav-item .nav-link {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     margin: 0 1rem;
+    color: #1F2A44;
+    /* Navy */
 }
+
 /* Active link styling */
 .nav-item .nav-link.active {
-    color: #ee537f;
+    color: #B8AEA1;
+    /* Taupe - assuming hover/active preference */
 }
 
 /* Hover effect */
 .nav-item .nav-link:hover {
-    color: #ee537f;
+    color: #B8AEA1;
+    /* Taupe */
 }
 
 
 /* Set regular weight for paragraphs and list items */
-p, li, .skill-card p {
+p,
+li,
+.skill-card p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-}    
+}
 
-section.container {
-    margin-bottom: 100px;
+/* Section Blocks */
+.section-block {
+    padding: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.bg-sage {
+    background-color: #C9D7C4;
+    color: #1F2A44;
+    /* Ensure headings and text contrast if needed, but text is largely handled by specific classes */
+}
+
+.bg-taupe {
+    background-color: #F2EDE4;
+    /* Beige */
 }
 
 .section-title {
-    color: #fff;
+    color: #1F2A44;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0px;
+    text-transform: uppercase;
 }
-.section-title-container {
-    background-color: #ee537f;
-    width: 100%;
-    padding: 15px 0px;
-}
+
+/* Reusing section-title-container styling is removed or repurposed */
+
 .skill-header {
     font-weight: bold;
     font-size: 1.1rem;
+    color: #1F2A44;
 }
+
 .skill-card {
-    border-bottom: 2px solid #ee537f;
-    padding-bottom: 1rem;
-    padding-bottom: 1rem;
+    /* Outline Shadow Style */
+    background-color: #ffffff;
+    /* Assuming white card on colored background */
+    border: 2px solid #B8AEA1;
+    /* Taupe */
+    box-shadow: 6px 6px 0px #B8AEA1;
+    /* Taupe hard shadow */
+    padding: 1.5rem;
     height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    /* Match other cards */
 }
+
+.bg-sage .skill-card {
+    /* Adjust shadow color for contrast on Sage background? Or keep Taupe?
+       "Outline Shadow Boxes Taupe B8AEA1" implies the shadow is Taupe.
+       Cards on Sage: White card, Taupe border/shadow.
+    */
+    border-color: #B8AEA1;
+    box-shadow: 6px 6px 0px #B8AEA1;
+}
+
 img.sw-logo {
     max-height: 70%;
     max-width: 80%;
@@ -137,28 +215,73 @@ img.sw-logo {
 
 .sw-card {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #C9D7C4;
+    /* Maybe alternating color or just Taupe? sticking to Taupe for "Outline Shadow Boxes" logic unless specified */
+    /* Let's make all shadow boxes Taupe as requested */
+    border: 2px solid #B8AEA1;
+    box-shadow: 6px 6px 0px #C9D7C4;
+    /* Maybe swap for contrast? Or stick to Taupe? */
+    /* User: "Outline Shadow Boxes Taupe B8AEA1" -> All of them. */
+    box-shadow: 6px 6px 0px #C9D7C4;
+    /* actually if background is Taupe, Taupe shadow is invisible. */
+    /* If Section is Taupe, Shadow should probably be Sage or White?
+       "Divide Sections as alternating... Sage and Taupe"
+       "Outline Shadow Boxes Taupe"
+       If section is Taupe, Card is white. Taupe shadow might blend in.
+       Let's use Safe for shadow on Taupe background?
+       Or maybe the user means the box ITSELF has a Taupe outline.
+       Let's stick to Taupe Outline/Shadow generally. If it blends, I might adjust locally.
+       On Taupe background (#B8AEA1), a Taupe shadow is invisible.
+       I'll make the shadow white or darker? Or Sage?
+       Let's try Sage shadow on Taupe background, and Taupe shadow on Sage background.
+    */
     padding: 0px;
     text-align: center;
     height: 150px;
     align-content: space-around;
+    border-radius: 6px;
+    /* Match ex-card rounded corners */
 }
+
+/* Specific overrides for alternating sections */
+.bg-sage .skill-card,
+.bg-sage .ex-card,
+.bg-sage .sw-card {
+    box-shadow: 6px 6px 0px #B8AEA1;
+    /* Taupe shadow on Sage background */
+}
+
+.bg-taupe .sw-card,
+.bg-taupe .ex-card,
+.bg-taupe .skill-card {
+    /* Match ex-card style from Work Experience (Taupe border/shadow) */
+    border: 2px solid #B8AEA1;
+    box-shadow: 6px 6px 0px #B8AEA1;
+    border-radius: 6px;
+    /* Match ex-card rounded corners */
+}
+
+
 div.sw-card img {
     vertical-align: middle;
 }
+
 div.ex-card {
-    border: 1px solid #F9D7E0;
+    border: 2px solid #B8AEA1;
+    /* Taupe default */
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 0px #B8AEA1;
+    /* Taupe default */
 }
+
 img.ex-logo {
     max-height: 65px;
     max-width: 165px;
-    
     margin-bottom: 30px;
 }
-div.ex-card button,  a.btn-pink {
+
+div.ex-card button,
+a.btn-pink {
     text-align: center;
     width: 50%;
 }
@@ -166,17 +289,18 @@ div.ex-card button,  a.btn-pink {
 .card .card-footer {
     background-color: transparent;
     border: none;
-  }
+}
+
 .gallery-block {
     background-color: rgb(228, 228, 228);
     width: 100%;
     height: 220px;
     background-repeat: no-repeat;
     background-position: top;
-    background-size:cover;
-    border: 1px solid #bbbbbb;
+    background-size: cover;
+    border: 1px solid #B8AEA1;
+    /* Taupe border */
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0px;
     margin: 0px 0px;
     text-align: center;
@@ -184,24 +308,52 @@ div.ex-card button,  a.btn-pink {
 
 .btn-pink {
     float: right;
-    background-color: #ee537f;
-    color: #fff;
+    background-color: #C9D7C4;
+    /* Sage */
+    color: #1F2A44;
+    /* Navy */
     border: none;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px;
+    /* Slightly boxy */
     transition: background-color 0.3s ease;
 }
 
 .btn-pink:hover {
-    background-color: #e63971; /* Slightly darker shade for hover */
-    color: #fff;
+    background-color: #B8AEA1;
+    /* Taupe */
+    color: #1F2A44;
 }
 
 .btn-pink:focus,
 .btn-pink:active {
-    background-color: #cc3062; /* Darker shade for focus or active states */
+    background-color: #9A8F82;
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
+}
+
+/* Portfolio Styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.portfolio-item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* Force square */
+    object-fit: cover;
+    border: 2px solid #B8AEA1;
+    /* Taupe outline */
+    box-shadow: 6px 6px 0px #B8AEA1;
+    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
 }
